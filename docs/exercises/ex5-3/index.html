@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="generator" content="Docusaurus v2.0.0-alpha.66">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous"><title data-react-helmet="true">Exercise 5-3 | EN.601.220: Intermediate Programming</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" name="docusaurus_language" content="en"><meta data-react-helmet="true" name="docusaurus_version" content="current"><meta data-react-helmet="true" name="docusaurus_tag" content="docs-default-current"><meta data-react-helmet="true" property="og:title" content="Exercise 5-3 | EN.601.220: Intermediate Programming"><meta data-react-helmet="true" name="description" content="This is an in-class exercise. An exercise page like this one will contain a brief description but is intended to be supplemented by discussion during our meeting time. Complete the exercise to the best of your ability in the time given. Feel free to talk with other students as you work, and do not be afraid to ask questions if you get stuck. Aim to complete as much as possible during our meeting, but you need not hand it in. You are encouraged to work at home to complete what you do not get through today, and ask questions over Piazza or in office hours."><meta data-react-helmet="true" property="og:description" content="This is an in-class exercise. An exercise page like this one will contain a brief description but is intended to be supplemented by discussion during our meeting time. Complete the exercise to the best of your ability in the time given. Feel free to talk with other students as you work, and do not be afraid to ask questions if you get stuck. Aim to complete as much as possible during our meeting, but you need not hand it in. You are encouraged to work at home to complete what you do not get through today, and ask questions over Piazza or in office hours."><meta data-react-helmet="true" property="og:url" content="https://jhu-ip.github.io/cs220-f22/docs/exercises/ex5-3"><link data-react-helmet="true" rel="shortcut icon" href="/cs220-f22/img/logo_cpp.svg"><link data-react-helmet="true" rel="canonical" href="https://jhu-ip.github.io/cs220-f22/docs/exercises/ex5-3"><link rel="stylesheet" href="/cs220-f22/styles.6771c19a.css">
-<link rel="preload" href="/cs220-f22/styles.154f5117.js" as="script">
-<link rel="preload" href="/cs220-f22/runtime~main.268777b1.js" as="script">
-<link rel="preload" href="/cs220-f22/main.ddbabece.js" as="script">
-<link rel="preload" href="/cs220-f22/1.dc202444.js" as="script">
-<link rel="preload" href="/cs220-f22/2.1896181e.js" as="script">
-<link rel="preload" href="/cs220-f22/93.8e967600.js" as="script">
-<link rel="preload" href="/cs220-f22/94.94dc659b.js" as="script">
-<link rel="preload" href="/cs220-f22/f976f453.bfb01b30.js" as="script">
-<link rel="preload" href="/cs220-f22/17896441.2da6c557.js" as="script">
-<link rel="preload" href="/cs220-f22/13a61d4a.de035660.js" as="script">
+<link rel="preload" href="/cs220-f22/styles.ac7495d6.js" as="script">
+<link rel="preload" href="/cs220-f22/runtime~main.5318aa9f.js" as="script">
+<link rel="preload" href="/cs220-f22/main.6bc49e11.js" as="script">
+<link rel="preload" href="/cs220-f22/1.a51454ea.js" as="script">
+<link rel="preload" href="/cs220-f22/2.2e942470.js" as="script">
+<link rel="preload" href="/cs220-f22/95.caf5d49d.js" as="script">
+<link rel="preload" href="/cs220-f22/96.d15885aa.js" as="script">
+<link rel="preload" href="/cs220-f22/f976f453.f42f33d7.js" as="script">
+<link rel="preload" href="/cs220-f22/17896441.e09032a5.js" as="script">
+<link rel="preload" href="/cs220-f22/13a61d4a.f27336f6.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -80,15 +80,15 @@ Run the following commands in <code>gdb</code>:</p><div class="mdxCodeBlock_1XEh
 memory locations as your program runs, and let you know exactly what is stored
 at those locations.  <code>gdb</code> is extremely cool!</p><p>Based on your investigation, is the computer you are running the <code>endian</code> program
 on big endian or little endian?</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_3SO_"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#part-1" class="table-of-contents__link">Part 1</a></li><li><a href="#part-2" class="table-of-contents__link">Part 2</a></li><li><a href="#part-3" class="table-of-contents__link">Part 3</a></li><li><a href="#part-4" class="table-of-contents__link">Part 4</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="text--center"><div>Copyright © 2022 CS220, Johns Hopkins University, Built with Docusaurus.</div></div></div></footer></div>
-<script src="/cs220-f22/styles.154f5117.js"></script>
-<script src="/cs220-f22/runtime~main.268777b1.js"></script>
-<script src="/cs220-f22/main.ddbabece.js"></script>
-<script src="/cs220-f22/1.dc202444.js"></script>
-<script src="/cs220-f22/2.1896181e.js"></script>
-<script src="/cs220-f22/93.8e967600.js"></script>
-<script src="/cs220-f22/94.94dc659b.js"></script>
-<script src="/cs220-f22/f976f453.bfb01b30.js"></script>
-<script src="/cs220-f22/17896441.2da6c557.js"></script>
-<script src="/cs220-f22/13a61d4a.de035660.js"></script>
+<script src="/cs220-f22/styles.ac7495d6.js"></script>
+<script src="/cs220-f22/runtime~main.5318aa9f.js"></script>
+<script src="/cs220-f22/main.6bc49e11.js"></script>
+<script src="/cs220-f22/1.a51454ea.js"></script>
+<script src="/cs220-f22/2.2e942470.js"></script>
+<script src="/cs220-f22/95.caf5d49d.js"></script>
+<script src="/cs220-f22/96.d15885aa.js"></script>
+<script src="/cs220-f22/f976f453.f42f33d7.js"></script>
+<script src="/cs220-f22/17896441.e09032a5.js"></script>
+<script src="/cs220-f22/13a61d4a.f27336f6.js"></script>
 </body>
 </html>

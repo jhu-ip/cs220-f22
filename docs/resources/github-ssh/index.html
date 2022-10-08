@@ -5,16 +5,16 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="generator" content="Docusaurus v2.0.0-alpha.66">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css" integrity="sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq" crossorigin="anonymous"><title data-react-helmet="true">Github ssh authentication | EN.601.220: Intermediate Programming</title><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"><meta data-react-helmet="true" name="docusaurus_language" content="en"><meta data-react-helmet="true" name="docusaurus_version" content="current"><meta data-react-helmet="true" name="docusaurus_tag" content="docs-default-current"><meta data-react-helmet="true" property="og:title" content="Github ssh authentication | EN.601.220: Intermediate Programming"><meta data-react-helmet="true" name="description" content="This document explains how you can create an SSH public/private keypair for"><meta data-react-helmet="true" property="og:description" content="This document explains how you can create an SSH public/private keypair for"><meta data-react-helmet="true" property="og:url" content="https://jhu-ip.github.io/cs220-f22/docs/resources/github-ssh"><link data-react-helmet="true" rel="shortcut icon" href="/cs220-f22/img/logo_cpp.svg"><link data-react-helmet="true" rel="canonical" href="https://jhu-ip.github.io/cs220-f22/docs/resources/github-ssh"><link rel="stylesheet" href="/cs220-f22/styles.6771c19a.css">
-<link rel="preload" href="/cs220-f22/styles.dee19492.js" as="script">
-<link rel="preload" href="/cs220-f22/runtime~main.0702e936.js" as="script">
-<link rel="preload" href="/cs220-f22/main.b74f1753.js" as="script">
-<link rel="preload" href="/cs220-f22/1.088ae86d.js" as="script">
-<link rel="preload" href="/cs220-f22/2.bdd7b08c.js" as="script">
-<link rel="preload" href="/cs220-f22/96.eb5ec01c.js" as="script">
-<link rel="preload" href="/cs220-f22/97.8232cf7f.js" as="script">
-<link rel="preload" href="/cs220-f22/f976f453.92129177.js" as="script">
-<link rel="preload" href="/cs220-f22/17896441.7070f5bd.js" as="script">
-<link rel="preload" href="/cs220-f22/fa5f5616.d27dd133.js" as="script">
+<link rel="preload" href="/cs220-f22/styles.a021929f.js" as="script">
+<link rel="preload" href="/cs220-f22/runtime~main.9b41dc8c.js" as="script">
+<link rel="preload" href="/cs220-f22/main.66122d23.js" as="script">
+<link rel="preload" href="/cs220-f22/1.945c3b4a.js" as="script">
+<link rel="preload" href="/cs220-f22/2.a1ac26e6.js" as="script">
+<link rel="preload" href="/cs220-f22/97.fdaadd9a.js" as="script">
+<link rel="preload" href="/cs220-f22/98.c30f7384.js" as="script">
+<link rel="preload" href="/cs220-f22/f976f453.d5ebc6a4.js" as="script">
+<link rel="preload" href="/cs220-f22/17896441.c61ec2df.js" as="script">
+<link rel="preload" href="/cs220-f22/fa5f5616.b8de357f.js" as="script">
 </head>
 <body>
 <script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
@@ -53,15 +53,15 @@ Emacs by typing <strong>Control-X</strong> followed by <strong>Control-C</strong
 Run the command</p><div class="mdxCodeBlock_1XEh"><div class="codeBlockContent_1u-d"><button tabindex="0" type="button" aria-label="Copy code to clipboard" class="copyButton_10dd">Copy</button><div class="prism-code language-bash codeBlock_3iAC"><div class="codeBlockLines_b7E3" style="color:#bfc7d5;background-color:#292d3e"><div class="token-line" style="color:#bfc7d5"><span class="token function" style="color:rgb(130, 170, 255)">git</span><span class="token plain"> pull</span></div></div></div></div></div><p>If the <code>git pull</code> command runs without prompting you to enter a password, congratulations,
 you are now using SSH to access your remote repository.  All subsequent <code>git pull</code> and
 <code>git push</code> commands will execute without prompting you for a username and password.</p></div></article><div class="margin-vert--lg"><nav class="pagination-nav" aria-label="Blog list page navigation"><div class="pagination-nav__item"></div><div class="pagination-nav__item pagination-nav__item--next"></div></nav></div></div></div><div class="col col--3"><div class="tableOfContents_3SO_"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#creating-an-ssh-publicprivate-keypair" class="table-of-contents__link">Creating an ssh public/private keypair</a></li><li><a href="#copy-your-public-ssh-key-to-the-clipboard" class="table-of-contents__link">Copy your public ssh key to the clipboard</a></li><li><a href="#add-the-public-key-to-your-github-account-settings" class="table-of-contents__link">Add the public key to your Github account settings</a></li><li><a href="#using-the-ssh-repository-url-for-your-private-repository" class="table-of-contents__link">Using the SSH repository URL for your private repository</a></li><li><a href="#changing-your-cloned-private-repository-to-use-ssh-authentication" class="table-of-contents__link">Changing your cloned private repository to use SSH authentication</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container"><div class="text--center"><div>Copyright © 2022 CS220, Johns Hopkins University, Built with Docusaurus.</div></div></div></footer></div>
-<script src="/cs220-f22/styles.dee19492.js"></script>
-<script src="/cs220-f22/runtime~main.0702e936.js"></script>
-<script src="/cs220-f22/main.b74f1753.js"></script>
-<script src="/cs220-f22/1.088ae86d.js"></script>
-<script src="/cs220-f22/2.bdd7b08c.js"></script>
-<script src="/cs220-f22/96.eb5ec01c.js"></script>
-<script src="/cs220-f22/97.8232cf7f.js"></script>
-<script src="/cs220-f22/f976f453.92129177.js"></script>
-<script src="/cs220-f22/17896441.7070f5bd.js"></script>
-<script src="/cs220-f22/fa5f5616.d27dd133.js"></script>
+<script src="/cs220-f22/styles.a021929f.js"></script>
+<script src="/cs220-f22/runtime~main.9b41dc8c.js"></script>
+<script src="/cs220-f22/main.66122d23.js"></script>
+<script src="/cs220-f22/1.945c3b4a.js"></script>
+<script src="/cs220-f22/2.a1ac26e6.js"></script>
+<script src="/cs220-f22/97.fdaadd9a.js"></script>
+<script src="/cs220-f22/98.c30f7384.js"></script>
+<script src="/cs220-f22/f976f453.d5ebc6a4.js"></script>
+<script src="/cs220-f22/17896441.c61ec2df.js"></script>
+<script src="/cs220-f22/fa5f5616.b8de357f.js"></script>
 </body>
 </html>
